@@ -1,11 +1,17 @@
-node-datatable
+node-pg-datatables
 ==============
 
-A Node.js implementation of a server-side processor for the jQuery DataTables plug-in.
+Is a fork from https://github.com/jpravetz/node-datatable made simple and specific to PostgreSQL
+
+Thanks to Jim Pravetz/jpravetz :)
+
+Node.js / PostgreSQL implementation of a server-side processor for the datatables.net plugin
 
 The node-datatable module provides backend query generation and result parsing to support
+
 [DataTables](https://www.datatables.net/manual/server-side) server-side processing for SQL databases.
 This module does not connect to nor query databases, instead leaving those tasks to the calling application.
+
 SQL querying has been separated so that the caller can leverage his or her existing module choices for connection pools,
 database interfaces, and the like. This module has been used with [node-mysql](https://github.com/felixge/node-mysql),
 [sequelize](http://sequelizejs.com), and [strong-oracle](https://github.com/strongloop/strong-oracle).
@@ -215,18 +221,6 @@ Example using ```sSelectSql``` and ```sFromSql``` to create a JOIN query:
   sFromSql: "table1 LEFT JOIN table2 ON table1.errorId=table2.errorId LEFT JOIN table3 ON table1.sessionId=table3.sessionId",
 }
 ```
-
-### Contributors ###
-
-* [Matthew Hasbach](https://github.com/mjhasbach)
-* [Benjamin Flesch](https://github.com/bf)
-
-## TODO ##
-
-1. Add an additional parameter to allow more then the requested number of records
-to be returned. This can be used to reduce the number of client-server calls (I think).
-2. A more thorough SQL injection security review (volunteers?).
-3. Unit tests (the original author is no longer working on the project that uses this module, so need volunteer)
 
 ## References ##
 

@@ -1,36 +1,39 @@
 {
-    "name": "datatable",
-    "version": "2.0.2",
-    "description": "Server-side processing for JQuery Datatable plug-in",
-    "author": {
-        "name": "Jim Pravetz",
-        "email": "jpravetz@epdoc.com"
+    "name": "node-pg-datatables",
+    "version": "0.0.1",
+    "description": "Node.js / PostgreSQL implementation of a server-side processor for the datatables.net plugin",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha test/**/*.spec.js"
     },
-    "contributors": [
-        {
-            "name": "Matthew Hasbach",
-            "email": "hasbach.git@gmail.com"
-        }
-    ],
-    "maintainers": [
-        {
-            "name": "Jim Pravetz",
-            "email": "jpravetz@epdoc.com"
-        }
-    ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/jpravetz/node-datatable.git"
+        "url": "git+https://github.com/lfreneda/node-pg-datatables.git"
     },
     "keywords": [
-        "jquery",
-        "datatable",
-        "sever-side processor"
+        "datatables.net",
+        "datatables",
+        "node",
+        "pg",
+        "postgresql",
+        "server-side-processing"
     ],
+    "author": "Luiz Freneda <lfreneda@gmail.com> (http://www.freneda.com.br)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/lfreneda/node-pg-datatables/issues"
+    },
+    "homepage": "https://github.com/lfreneda/node-pg-datatables#readme",
     "dependencies": {
         "underscore": "1.4.x"
     },
     "engines": {
         "node": ">= 0.6.x"
+    },
+    "devDependencies": {
+        "chai": "^3.5.0",
+        "coffee-script": "^1.10.0",
+        "mocha": "^2.5.3",
+        "sinon": "^1.17.4"
     }
 }
